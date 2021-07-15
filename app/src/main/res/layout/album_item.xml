@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:clickable="true"
+    android:background="?android:selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/circularRevealCardViewAlbum"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0">
+
+        <ImageView
+            android:id="@+id/songImageAlbum"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/shape" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/textViewAlbum"
+        android:layout_width="220dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="25dp"
+        android:text="Dear god"
+        android:layout_marginTop="0dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="@+id/circularRevealCardViewAlbum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@+id/circularRevealCardViewAlbum"
+        app:layout_constraintTop_toTopOf="@+id/circularRevealCardViewAlbum"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/textView2Album"
+        android:layout_width="220dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Avenged seven fold"
+        app:layout_constraintBottom_toBottomOf="@+id/circularRevealCardViewAlbum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@+id/textViewAlbum"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAlbum"
+        app:layout_constraintVertical_bias="0" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        app:layout_constraintHorizontal_bias="1"
+        android:background="@drawable/ic_more_horiz_24"
+        app:layout_constraintBottom_toBottomOf="@+id/circularRevealCardViewAlbum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/circularRevealCardViewAlbum"
+        app:layout_constraintTop_toTopOf="@+id/circularRevealCardViewAlbum" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
